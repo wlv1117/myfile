@@ -1,0 +1,188 @@
+/*****************************css代码开始*****************************/
+body{
+    background: white;
+}
+/*****************************头部logo样式*****************************/
+.banner{
+    width: 900px;
+    height: 100px;
+    margin:0 auto;
+    line-height: 100px;
+    text-align: center;
+
+}
+/*****************************导航样式*****************************/
+.nav{
+    width: 100%;
+    height: 100px;
+    /*绝对定位脱离标准流,固定定位(fixed)亦脱标*/
+    position: absolute;
+    left: 0;
+    top: 100px;
+}
+.nav .navContent{
+    width: 900px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 auto;
+
+}
+.nav .navContent .navLeft{
+    float: left;
+    padding-right:40px;
+}
+.nav .navContent .navLeft img{
+    /*图片隐藏不能用display:none;因为用display设置隐藏后,图片在标准流中不会占位;但visibility会占位,故此处我们可以设置visibility:visible(显示)/hidden(隐藏)*/
+    width: 140px;
+    height: 44px;
+    visibility: hidden;
+}
+.nav .navContent .navRight{
+    float: left;
+}
+.nav .navContent .navRight input[type=text]{
+    /*设宽度为621,让整个*/
+    width: 621px;
+    height: 44px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.nav .navContent .navRight input[type=submit]{
+    width: 100px;
+    height: 44px;
+    background: cornflowerblue;
+    font-size: 24px;
+    position: relative;
+    margin-left: -5px;
+    color: orangered;
+}
+/*****************************底部内容样式*****************************/
+.content{
+    width: 900px;
+    height: 2000px;
+    margin: 110px auto 0;
+/*上边距85px auto左右边距浏览器计算(一般居中) 0表示下边距；一般margin的四个值对应的是上，右，下，左）*/
+    border: 1px solid #ccc;
+}
+.content .header{
+    width: 100%;
+    height: 44px;
+    border-bottom: 1px solid #ccc;
+}
+.content .header ul li{
+    width: 88px;
+    height: 44px;
+    line-height:44px;
+    font-size: 16px;
+    padding: 0 10px;
+    float: left;
+}
+.curr{
+    background: #666;
+    color: white;
+}
+.body{
+    display: none;
+}
+.active{
+    display: block;
+}
+.body ul li{
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    padding-left: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.body .del,.detail{
+    color: orangered;
+    float: right;
+    margin-right: 10px;
+}
+
+/*****************************返回顶部样式*****************************/
+.returnTop{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+}
+/*****************************模态窗口样式*****************************/
+.mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+.mask .detail_content{
+    width: 320px;
+    height: 300px;
+    border: 2px solid hotpink;
+    margin:200px auto;
+    border-radius: 10px;
+    padding: 10px;
+    background: skyblue;
+}
+.detail_content .detail_header{
+    height: 44px;
+    line-height: 44px;
+    margin-left: 10px;
+
+}
+.detail_content .detail_header .title{
+    color: crimson;
+    font-size: 18px;
+    float: left;
+
+    
+}
+.mask .detail_content .detail_header .close{
+    float: right;
+    background: hotpink;
+    width: 44px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    border-radius: 5px;
+}
+.mask .detail_content .detail_body textarea{
+    width: 300px;
+    height: 150px;
+    font-size: 18px;
+    margin-top: 5px;
+    padding-left: 10px;
+    border: 2px solid hotpink;
+    border-radius: 5px;
+    resize: none;
+}
+.mask .detail_content .detail_body input[type=text]{
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    padding-left:10px;
+    font-size: 18px;
+    border: 2px solid hotpink;
+    border-radius: 5px;
+}
+.mask .detail_content .detail_body button{
+    width: 100px;
+    height: 30px;
+    background: hotpink;
+    float: right;
+    margin-top: 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+}
+/*****************************闹铃样式*****************************/
+video{
+    opacity: 0;
+}
+/*****************************css代码结束*****************************/
+
+

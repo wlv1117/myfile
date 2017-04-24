@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery应用之终章3</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/store.min.js"></script>
+    <script src="js/jquery.datetimepicker.full.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<!--返顶-->
+<div class="returnTop">
+    <img src="images/Top.jpg" alt="">
+</div>
+<!--网页头部-->
+<div class="banner"><img src="images/logo.png" alt=""></div>
+<!--网页导航界面-->
+<div class="nav">
+    <div class="navContent">
+        <!--左边图片-->
+        <div class="navLeft"><img src="images/logo.png" alt=""></div>
+        <!--右边输入框-->
+        <div class="navRight">
+            <form action="">
+                <input type="text">
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+</div>
+<!--网页底部内容-->
+<div class="content">
+    <!--内容头部-->
+    <div class="header">
+        <ul>
+            <li class="curr">待办事项</li>
+            <li>完成事项</li>
+        </ul>
+    </div>
+    <!--内容底部-->
+    <div class="body active">
+        <ul class="task">
+            <!--<li>-->
+                <!--<input type="checkbox">-->
+                <!--<span>13333</span>-->
+                <!--<span class="del">删除</span>-->
+                <!--<span class="detail">详情</span>-->
+            <!--</li>-->
+        </ul>
+    </div>
+    <div class="body">
+        <ul class="finishTask">
+
+        </ul>
+    </div>
+</div>
+<!--模态面板-->
+<div class="mask">
+    <div class="detail_content">
+        <!--详情头部-->
+        <div class="detail_header">
+            <span class="title">wtf</span>
+            <!--关闭按钮用打叉的字符实体表示-->
+            <span class="close">&times;</span>
+        </div>
+        <!--详情内容更新界面-->
+        <div class="detail_body">
+            <textarea></textarea>
+            <input type="text" id="data_time">
+            <button>更新</button>
+        </div>
+    </div>
+</div>
+<!--网页闹铃-->
+<video src="4188.mp3"></video>
+</body>
+</html>
